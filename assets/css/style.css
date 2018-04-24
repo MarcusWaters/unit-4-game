@@ -1,19 +1,48 @@
 body {
-    /* background-image: url(../images/pepita.png); */
+    background-image: url(../images/cavern.jpg);
+    color: white;
    
 }
 
 h1 {
     font-size: 44px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
     
 }
 
-p {
-    font-size: 36px;
+li {
+    font-size: 18px;
+    color: white;
   
 }
 
 img {
     height: 200px;
     width: 200px;s
+}
+
+
+.row {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#title {
+    color: white;
+}
+
+#score {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#mainText {
+    padding: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
 }

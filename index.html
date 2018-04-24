@@ -6,45 +6,94 @@
     <title>CrystalsCollecter</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
 
 </head>
 
 <body>
-    <h1>CrystalsCollecter</h1>
-    <br>
-
-    <div>
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount to your total score.</p>
-        <p>You win the game by matching your total score to a random number, and you lose the game if your total score goes
-            above the random number.</p>
-        <p>The value of each crystal is hidden until you click it.</p>
-        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    <div id="title">
+        <h1>Crystals Collecter</h1>
     </div>
+
+    <div id="mainText">
+        <p>
+            <li>You will be given a random number at the start of the game.</li>
+        </p>
+        <p>
+            <li>There are four crystals below. By clicking on a crystal you will add a specific amount to your total score.</li>
+        </p>
+        <p>
+            <li>You win the game by matching your total score to a random number</li>
+        </p>
+        <p>
+            <li>You lose the game if your total score goes above the random number.</li>
+        </p>
+        <p>
+            <li>The value of each crystal is hidden until you click it.</li>
+        </p>
+        <p>
+            <li>Each time when the game starts, the game will change the values of each crystal.</li>
+        </p>
+    </div>
+
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
+    <div class="row">
 
-    <p id="computerScore"></p>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <div>Target Score:
+                <p id="computerScore"></p>
+            </div>
+        </div>
 
 
-    <div>Wins:
-        <p id="wins"></p>
+        <div class="col-sm-3">
+            <div>Wins: 
+                <p id="wins"></p>
+            </div>
+            <div>Losses: 
+                <p id="losses"></p>
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
-    <div>Losses:
-        <p id="losses"></p>
+
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+            <div id="red">
+                <img src="assets/images/red.jpg">
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div id="blue">
+                <img src="assets/images/blue.jpg">
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div id="green">
+                <img src="assets/images/green.jpg">
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div id="purple">
+                <img src="assets/images/purple.jpg">
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
     </div>
 
 
-    <div id="red"><img src="assets/images/red.jpg"></div>
-    <div id="blue"><img src="assets/images/blue.jpg"></div>
-    <div id="green"><img src="assets/images/green.jpg"></div>
-    <div id="purple"><img src="assets/images/purple.jpg"></div>
-
-
-
-    <p id="playerScore"></p>
+    <div id="score">Your Score:
+        <p id="playerScore"></p>
+    </div>
 
 
 
